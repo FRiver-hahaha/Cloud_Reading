@@ -1,0 +1,268 @@
+:root {
+            --primary-bg-color: #d2d0ba;
+            --container-bg-color: #f3f2ed;
+            --border-color: #dbd6d0;
+            --primary-text-color: black;
+            --link-color: #18539e;
+            --search-border-color: #f69f53;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: var(--link-color);
+        }
+        
+        html {
+            background-color: var(--primary-bg-color);
+            font-size: 16px;
+        }
+        
+        body {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: "KaiTi", "楷体", STKaiti, serif;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 23.77rem;
+            margin: 0 auto;
+        }
+        
+        /* 标题样式 */
+        .title-container {
+            background-color: var(--container-bg-color);
+            border: solid 0.07rem var(--border-color);
+            border-radius: 0.3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.3rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            height: 1.75rem;
+        }
+        
+        .decoration-img {
+            width: 1.59rem;
+            height: 1.59rem;
+        }
+        
+        .main-title {
+            font-size: 0.9rem;
+            text-align: center;
+            color: var(--primary-text-color);
+        }
+        
+        .sub-title {
+            font-size: 0.45rem;
+            text-align: center;
+            color: var(--primary-text-color);
+        }
+        
+        /* 搜索区域 */
+        .search-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        
+        .search-container {
+            background-color: #ffffff;
+            height: 1rem;
+            border: solid 0.05rem var(--search-border-color);
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            margin-right: 0.5rem;
+        }
+        
+        .search-input {
+            outline: none;
+            border: none;
+            background: none;
+            padding-left: 0.4rem;
+            font-size: 0.4rem;
+            line-height: 1rem;
+            width: 100%;
+            color: var(--primary-text-color);
+        }
+        
+        .search-button {
+            padding: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-icon {
+            width: 0.82rem;
+            height: 0.92rem;
+        }
+        
+        .search-results {
+            background-color: var(--container-bg-color);
+            border: solid 0.07rem var(--border-color);
+            border-radius: 0.3rem;
+            width: 10rem;
+            max-height: 6rem;
+            position: absolute;
+            top: 4rem;
+            z-index: 100;
+            display: none;
+            overflow-y: auto;
+        }
+        
+        .search-results .poet-item {
+            padding: 0.2rem 0.5rem;
+            font-size: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .search-results .poet-item:last-child {
+            border-bottom: none;
+        }
+        
+        .quote {
+            font-size: 0.5rem;
+            color: var(--primary-text-color);
+            text-align: center;
+            margin: 0 0.5rem;
+            flex-shrink: 0;
+            font-family: fangsong;
+        }
+        
+        /* 导航标签 */
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            width: 35%;
+            background-color: var(--container-bg-color);
+            border: solid 0.07rem var(--border-color);
+            border-radius: 0.3rem;
+            position: fixed;
+            right: 0.5rem;
+            bottom: 0.5rem;
+        }
+        
+        .tab-container a {
+            margin: 0 0.5rem;
+            color: var(--primary-text-color);
+            font-size: 0.5rem;
+        }
+        
+        /* 朝代分类 */
+        .dynasty-container {
+            background-color: var(--container-bg-color);
+            border: solid 0.07rem var(--border-color);
+            border-radius: 0.3rem;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0.5rem 0;
+            margin-bottom: 0.5rem;
+            width: 100%;
+        }
+        
+        .dynasty-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.5rem;
+            font-weight: bold;
+        }
+        
+        /* 图片 */
+        .decorative-img {
+            width: 100%;
+        }
+        
+        .examination_container {
+            background-color: var(--container-bg-color);
+            border: solid 0.07rem var(--border-color);
+            border-radius: 0.3rem;
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.3rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.5rem;
+        }
+        /* 后记 */
+        .epilogue {
+            background-color: var(--container-bg-color);
+            border: solid 0.07rem var(--border-color);
+            border-radius: 0.3rem;
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-text-color);
+            
+        }
+        
+        .epilogue h4 {
+            font-size: 0.6rem;
+            text-align: center;
+            margin-bottom: 0.3rem;
+            color: var(--primary-text-color);
+        }
+        
+        .epilogue p {
+            font-size: 0.5rem;
+            margin-bottom: 0.3rem;
+            line-height: 1.4;
+            color: var(--primary-text-color);
+            font-family: fangsong;
+        }
+        
+        /* 免责声明 */
+        .disclaimer {
+            
+            font-size: 0.4rem;
+            line-height: 1.4;
+            width: 100%;
+            padding: 0.5rem;
+        }
+        
+        .disclaimer p {
+            margin-bottom: 0.5rem;
+            color: var(--primary-text-color);
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 480px) {
+            .search-section {
+                flex-direction: column;
+            }
+            
+            .search-container {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+            
+            .quote {
+                margin: 0.5rem 0;
+            }
+            
+            .dynasty-container {
+                flex-wrap: wrap;
+            }
+            
+            .dynasty-item {
+                width: 33%;
+                margin-bottom: 0.5rem;
+            }
+        }

@@ -1,0 +1,9 @@
+.BGM{
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0.5rem;   
+    width: 20%;
+}

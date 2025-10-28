@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夜集诗文网_高考必备诗文</title>
+    <link rel="stylesheet" href="./css/BGM.css">
+    <link rel="icon" href="./装饰图片/标题旁装饰1.webp">
+    <link rel="stylesheet" href="./css/页面框架.css">
+</head>
+<body>  
+    <div class="container">
+        <!-- 标题 -->
+        <div class="title-container">
+            <img src="./装饰图片/标题旁装饰1.webp" alt="" class="decoration-img">
+            <div>
+                <div class="main-title">夜集诗文网</div>
+                <div class="sub-title">欢迎阅读</div>
+            </div>
+            <img src="./装饰图片/标题旁装饰1.webp" alt="" class="decoration-img">
+        </div>
+        
+        <!-- 搜索区域 -->
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="请搜索相关诗人" id="searchInput">
+                <button class="search-button" id="searchBtn">
+                    <img class="search-icon" src="./装饰图片/搜索框旁装饰1.webp" alt="搜索">
+                </button>
+            </div>
+            <div class="quote">明年此日青云上，却笑人间举子忙。</div>
+            
+            <!-- BGM -->
+            <audio class="BGM" loop controls preload="metadata">
+                <source src="./BGM.mp3" type="audio/mpeg">
+                您的浏览器不支持audio元素
+            </audio>
+        </div>
+        
+        <!-- 搜索结果 -->
+        <div class="search-results" id="searchResults">
+            <div class="poet-item" style="color: black; font-weight: bold;">诗人</div>
+            <!-- 诗人列表将由JavaScript动态生成 -->
+        </div>
+        
+        <!-- 导航标签 -->
+        <div class="tab-container">
+            <a href="http://127.0.0.1:5500/shouye.html">首页</a>
+            <a href="http://127.0.0.1:5500/gaokaobibeishiwen.html">高考必背诗文</a>
+        </div>
+        
+        <!-- 装饰图片 -->
+        <img src="./装饰图片/高考必背诗文大图.webp" class="decorative-img" alt="暂无该图......">
+        
+        <!-- 朝代分类 -->
+        <!-- <div class="dynasty-container">
+            <div class="dynasty-item">汉</div>
+            <div class="dynasty-item">三国</div>
+            <div class="dynasty-item">唐</div>
+            <div class="dynasty-item">宋</div>
+            <div class="dynasty-item">近代</div>
+        </div> -->
+        
+
+        <!-- 高考必备诗文 -->
+        <div class="examination_container">
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=48479bc1dedf" class="《论语》十二章">《论语》十二章</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=9b5ed8061abe" class="《劝学》">《劝学》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=b90a5a8ddd14" class="《屈原列传节选》">《屈原列传节选》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=3827a21544f0" class="《谏太宗十思疏》">《谏太宗十思疏》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_de14d6f28c.aspx" class="《师说》">《师说》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_ef13474b07.aspx" class="《阿房宫赋》">《阿房宫赋》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=077582755824" class="《六国论》">《六国论》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=b09aa5c9b747" class="《答司马谏议书》">《答司马谏议书》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=4cac23b07849" class="《赤壁赋》">《赤壁赋》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=a8fb4f01b418" class="《项脊轩志》">《项脊轩志》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=736e296de7fd" class="《子路、曾皙、冉有、公西华侍坐》">《子路、曾皙、冉有、公西华侍坐》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv_b29e2f54258e.aspx" class="《报任安书》节选">《报任安书》节选</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=21e30e31fefc" class="《过秦论》">《过秦论》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=522599b27a17" class="《礼运》">《礼运》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv_f84986dafb2d.aspx" class="《陈情表》">《陈情表》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=987458864738" class="《归去来兮辞》（并序）">《归去来兮辞》（并序）</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_f40fd892f7.aspx" class="《种树郭橐驼传》">《种树郭橐驼传》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=6cd4e529af11" class="《五代史伶官传序》">《五代史伶官传序》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=c72161f552bb" class="《石钟山记》">《石钟山记》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=8bf5847fffd5" class="《登泰山记》">《登泰山记》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=353675c10e72" class="《老子》">《老子》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_70164c175d.aspx" class="《季氏将伐颛臾》">《季氏将伐颛臾》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/guwen/bookv_65f294fe3891.aspx" class="《大学》">《大学》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=7e7dc2489f5f" class="《孟子》">《孟子》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=5bfecbe60620" class="《逍遥游》">《逍遥游》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=2a6f10fb5dec" class="《谏逐客书》">《谏逐客书》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv_af279f0cdd95.aspx" class="《兰亭集序》">《兰亭集序》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_0550b33cad.aspx" class="《滕王阁序》">《滕王阁序》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_a8ade4eb96.aspx" class="《黄冈竹楼记》">《黄冈竹楼记》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=785ab99c5a0c" class="《上枢密韩太尉书》">《上枢密韩太尉书》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=87e447468c9e" class="《静女》">《静女》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=4830155d39b2" class="《无衣》">《无衣》</a>
+            <a target="_blank" href="https://www.shihuapp.com/shici/f2c73db" class="《离骚》">《离骚》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=c72d94b49cc6" class="《涉江采芙蓉》">《涉江采芙蓉》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=35000de73cdb" class="《短歌行》">《短歌行》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=a537ff195683" class="《归园田居•其一》">《归园田居•其一》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=5261df279f62" class="《拟行路难•其四》">《拟行路难•其四》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=3aed26d1fa99" class="《春江花月夜》">《春江花月夜》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=44ba4afb80db" class="《山居秋暝》">《山居秋暝》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=d59ec5d6c91c" class="《蜀道难》">《蜀道难》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=05e2f6fc757c" class="《梦游天姥吟留别》">《梦游天姥吟留别》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_0fd00ff1aa.aspx" class="《将进酒》">《将进酒》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=4c7868ec4409" class="《燕歌行》">《燕歌行》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=625762a4b089" class="《蜀相》">《蜀相》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=2dfd92e6cd5b" class="《客至》">《客至》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=eeb217f8cb2d" class="《登高》">《登高》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=c05fb9a17f71" class="《登岳阳楼》">《登岳阳楼》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=0581b0ba8bb4" class="《琵琶行》">《琵琶行》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=77b08ab3153f" class="《李凭箜篌引》">《李凭箜篌引》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=91843a09f605" class="《菩萨蛮》">《菩萨蛮》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=1921957e6e83" class="《锦瑟》">《锦瑟》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=3574610d74e0" class="《虞美人•春花秋月何时了》">《虞美人•春花秋月何时了》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=a52ca0ee5a22" class="《望海潮》">《望海潮》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=17a86f6c536a" class="《桂枝香•金陵怀古》">《桂枝香•金陵怀古》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=567fcf6ffefb" class="《江城子•乙卯正月二十日夜记梦》">《江城子•乙卯正月二十日夜记梦》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=5fb51378286c" class="《念奴娇•赤壁怀古》">《念奴娇•赤壁怀古》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=8545428012cd" class="《登快阁》">《登快阁》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=e83cadaaf394" class="《鹊桥仙•纤云弄巧》">《鹊桥仙•纤云弄巧》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=faf9dc70bff2" class="《苏幕遮•燎沉香》">《苏幕遮•燎沉香》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=f82821b9d569" class="《声声慢》">《声声慢》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_ac2a2a9d3d.aspx" class="《书愤》">《书愤》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=0ccd54b5b58a" class="《临安春雨初霁》">《临安春雨初霁》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=8d26eae2cfdf" class="《念奴娇•过洞庭》">《念奴娇•过洞庭》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=12e69f000057" class="《永遇乐•京口北固亭怀古》">《永遇乐•京口北固亭怀古》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=958ebfc84111" class="《菩萨蛮•书江西造口壁》">《菩萨蛮•书江西造口壁》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=51aa3a553057" class="《青玉案•元夕》">《青玉案•元夕》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=e87b0ed8c31c" class="《贺新郎•国脉微如缕》">《贺新郎•国脉微如缕》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=a8062138a414" class="《扬州慢•淮左名都》">《扬州慢•淮左名都》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/GuShiWen_73acc53102.aspx" class="《长亭送别》">《长亭送别》</a>
+            <a target="_blank" href="https://www.gushiwen.cn/shiwenv.aspx?id=dff01ff4925b" class="《朝天子•咏喇叭》">《朝天子•咏喇叭》</a>
+        </div>
+
+
+        <!-- 装饰图片 -->
+        <img src="./装饰图片/生成登山客图.webp" alt="登山客" class="decorative-img">
+        
+        <!-- 后记 -->
+        <div class="epilogue">
+            <h4>后记</h4>
+            <p>再次欢迎您来到夜集诗文网。国家的发展，需要政治、经济、科学、文艺、教育、军事全方位协同并进。而在如今短平快的时代节奏下，科技浪潮席卷世界，在机械手臂的狭缝之中，更呼唤为文艺发声，为青春献歌。</p>
+            <p>而如何与时俱进，这份网站的建立便是答案。在该网站中，我尽量涵盖了更多知名诗人，从汉朝，三国，唐代，宋代，近代，每个时代的诗人们熠熠生辉的时刻都被寄存在此地。</p>
+            <p>同样作为一名高考毕业生，我特别设置了一列"高考必背"诗文大全，其间共涵盖72首必背古诗词，均为高考前的必看必背篇目。</p>
+            <p>曾几何时，在高考后的某个夜晚，我盼望着做出来一款自己的网站，在未来发光发热。而今天他诞生了，他必将饱含着无数先哲的智慧，在未来的日子里奏响时代最强音。</p>
+            <p>网站尚有不足，欢迎各位指正。</p>
+        </div>
+        
+        <hr>
+        
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p>本站部分文字、图片来源于网络，仅为知识分享目的。</p><br>
+            <p>公益项目。与任何组织无关。</p>
+            <p>本站包含的第三方链接（如百科、文献网站）仅供参考，<br>
+            <strong>不保证其内容准确性</strong>。<br>
+            访问这些链接的风险由用户自行承担。</p>
+        </div>
+    </div>
+
+    <script>
+        // 响应式字体调整
+        function adjustFontSize() {
+            document.documentElement.style.fontSize = screen.width / 25 + 'px';
+        }
+        
+        adjustFontSize();
+        window.addEventListener('resize', adjustFontSize);
+        
+        // 诗人数据
+        const poets = [
+            { name: "刘雄", url: "https://baike.baidu.com/item/%E5%88%98%E9%9B%84/20890" },
+            { name: "张衡", url: "https://baike.baidu.com/item/%E5%BC%A0%E8%A1%A1/8398" },
+            { name: "刘向", url: "https://baike.baidu.com/item/%E5%88%98%E5%90%91/197150" },
+            { name: "李尤", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%B0%A4/73692" },
+            { name: "司马相如", url: "https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E7%9B%B8%E5%A6%82/1112941" },
+            { name: "班固", url: "https://baike.baidu.com/item/%E7%8F%AD%E5%9B%BA/81828" },
+            { name: "孔融", url: "https://baike.baidu.com/item/%E5%AD%94%E8%9E%8D/17038" },
+            { name: "秦嘉", url: "https://baike.baidu.com/item/%E7%A7%A6%E5%98%89/8582776" },
+            { name: "刘彻", url: "https://baike.baidu.com/item/%e5%88%98%e5%bd%bb/477056" },
+            { name: "贾谊", url: "https://baike.baidu.com/item/%e8%b4%be%e8%b0%8a/50286" },
+            { name: "胡广", url: "https://baike.baidu.com/item/%E8%83%A1%E5%B9%BF/3016226" },
+            { name: "卓文君", url: "https://baike.baidu.com/item/%E5%8D%93%E6%96%87%E5%90%9B/823759" },
+            { name: "扬雄", url: "https://baike.baidu.com/item/%E6%89%AC%E9%9B%84/1218028" },
+            { name: "晁(cháo)错", url: "https://baike.baidu.com/item/%E6%99%81%E9%94%99/276437" },
+            { name: "蔡文姬", url: "https://baike.baidu.com/item/%E8%94%A1%E6%96%87%E5%A7%AC/6785" },
+            { name: "刘邦", url: "https://baike.baidu.com/item/%E5%88%98%E9%82%A6/129493" },
+            { name: "东方朔", url: "https://baike.baidu.com/item/%E4%B8%9C%E6%96%B9%E6%9C%94/13763" },
+            { name: "庞德公", url: "https://baike.baidu.com/item/%E5%BA%9E%E5%BE%B7%E5%85%AC/1693895" },
+            { name: "董仲舒", url: "https://baike.baidu.com/item/%E8%91%A3%E4%BB%B2%E8%88%92/374982" },
+            { name: "虞姬", url: "https://baike.baidu.com/item/%E8%99%9E%E5%A7%AC/277490" },
+            { name: "王昭君", url: "https://baike.baidu.com/item/%E7%8E%8B%E6%98%AD%E5%90%9B/5307" },
+            { name: "蔡邕(yōng)", url: "https://baike.baidu.com/item/%E8%94%A1%E9%82%95/16969" },
+            { name: "苏武", url: "https://baike.baidu.com/item/%E8%8B%8F%E6%AD%A6/517980" },
+            { name: "班昭", url: "https://baike.baidu.com/item/%E7%8F%AD%E6%98%AD/28914" },
+            { name: "曹植", url: "https://baike.baidu.com/item/%E6%9B%B9%E6%A4%8D/17364" },
+            { name: "嵇康", url: "https://baike.baidu.com/item/%E5%B5%87%E5%BA%B7/151928" },
+            { name: "曹丕", url: "https://baike.baidu.com/item/%E6%9B%B9%E4%B8%95/5980" },
+            { name: "阮籍", url: "https://baike.baidu.com/item/%E9%98%AE%E7%B1%8D/151579" },
+            { name: "王粲(càn)", url: "https://baike.baidu.com/item/%E7%8E%8B%E7%B2%B2/705914" },
+            { name: "诸葛亮", url: "https://baike.baidu.com/item/%e8%af%b8%e8%91%9b%e4%ba%ae/21048" },
+            { name: "李康", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%BA%B7/904510?fromModule=lemma_sense-layer#viewPageContent" },
+            { name: "左延年", url: "https://baike.baidu.com/item/%E5%B7%A6%E5%BB%B6%E5%B9%B4/937546#:~:text=%E5%B7%A6%E5%BB%B6%E5%B9%B4%EF%BC%8C%E4%B8%89%E5%9B%BD%E6%97%B6%E6%9C%9F%E9%AD%8F%E5%9B%BD%E9%9F%B3%E4%B9%90%E5%AE%B6%E3%80%81%E8%AF%97%E4%BA%BA%E3%80%82,%E6%B4%BB%E8%B7%83%E4%BA%8E%E9%BB%84%E5%88%9D%E5%B9%B4%E9%97%B4%EF%BC%88220%EF%BD%9E226%E5%B9%B4%EF%BC%89%E3%80%82" },
+            { name: "李白", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD/1043" },
+            { name: "杜甫", url: "https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB/63508" },
+            { name: "卢照邻", url: "https://baike.baidu.com/item/%E5%8D%A2%E7%85%A7%E9%82%BB/249759" },
+            { name: "骆宾王", url: "https://baike.baidu.com/item/%E9%AA%86%E5%AE%BE%E7%8E%8B/250755" },
+            { name: "王勃", url: "https://baike.baidu.com/item/%E7%8E%8B%E5%8B%83/248912" },
+            { name: "陈子昂", url: "https://baike.baidu.com/item/%E9%99%88%E5%AD%90%E6%98%82/335232" },
+            { name: "张若虚", url: "https://baike.baidu.com/item/%E5%BC%A0%E8%8B%A5%E8%99%9A/330234" },
+            { name: "张九龄", url: "https://baike.baidu.com/item/%E5%BC%A0%E4%B9%9D%E9%BE%84/210045" },
+            { name: "王之涣", url: "https://baike.baidu.com/item/%E7%8E%8B%E4%B9%8B%E6%B6%A3/624955" },
+            { name: "孟浩然", url: "https://baike.baidu.com/item/%E5%AD%9F%E6%B5%A9%E7%84%B6/28158" },
+            { name: "王昌龄", url: "https://baike.baidu.com/item/%E7%8E%8B%E6%98%8C%E9%BE%84/2684" },
+            { name: "王维", url: "https://baike.baidu.com/item/%E7%8E%8B%E7%BB%B4/37558" },
+            { name: "刘方平", url: "https://baike.baidu.com/item/%E5%88%98%E6%96%B9%E5%B9%B3/1831791" },
+            { name: "王湾", url: "https://baike.baidu.com/item/%E7%8E%8B%E6%B9%BE/1132279" },
+            { name: "崔颢", url: "https://baike.baidu.com/item/%E5%B4%94%E9%A2%A2/831831" },
+            { name: "高适", url: "https://baike.baidu.com/item/%E9%AB%98%E9%80%82/15618" },
+            { name: "刘长卿", url: "https://baike.baidu.com/item/%E5%88%98%E9%95%BF%E5%8D%BF/334056" },
+            { name: "岑参", url: "https://baike.baidu.com/item/%E5%B2%91%E5%8F%82/211501?fromModule=lemma_sense-layer#viewPageContent" },
+            { name: "司空曙", url: "https://baike.baidu.com/item/%E5%8F%B8%E7%A9%BA%E6%9B%99/280222" },
+            { name: "钱起", url: "https://baike.baidu.com/item/%E9%92%B1%E8%B5%B7/333955" },
+            { name: "郎士元", url: "https://baike.baidu.com/item/%E9%83%8E%E5%A3%AB%E5%85%83/2148980" },
+            { name: "顾况", url: "https://baike.baidu.com/item/%E9%A1%BE%E5%86%B5/332166" },
+            { name: "陆羽", url: "https://baike.baidu.com/item/%E9%99%86%E7%BE%BD/550560" },
+            { name: "孟云卿", url: "https://baike.baidu.com/item/%E5%AD%9F%E4%BA%91%E5%8D%BF/2147806" },
+            { name: "严武", url: "https://baike.baidu.com/item/%E4%B8%A5%E6%AD%A6/11622" },
+            { name: "杨凝", url: "https://baike.baidu.com/item/%E6%9D%A8%E5%87%9D/3991225?fromModule=lemma_sense-layer#viewPageContent" },
+            { name: "戴叔伦", url: "https://baike.baidu.com/item/%E6%88%B4%E5%8F%94%E4%BC%A6/333860" },
+            { name: "李端", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%AB%AF/7418704" },
+            { name: "韦应物", url: "https://baike.baidu.com/item/%E9%9F%A6%E5%BA%94%E7%89%A9/335464" },
+            { name: "戎昱", url: "https://baike.baidu.com/item/%E6%88%8E%E6%98%B1/329498" },
+            { name: "李益", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%9B%8A/333413" },
+            { name: "卢纶", url: "https://baike.baidu.com/item/%E5%8D%A2%E7%BA%B6/333738" },
+            { name: "孟郊", url: "https://baike.baidu.com/item/%E5%AD%9F%E9%83%8A/335336" },
+            { name: "王建", url: "https://baike.baidu.com/item/%E7%8E%8B%E5%BB%BA/3778259?fromModule=lemma_sense-layer#viewPageContent" },
+            { name: "张籍", url: "https://baike.baidu.com/item/%E5%BC%A0%E7%B1%8D/333035" },
+            { name: "韩愈", url: "https://baike.baidu.com/item/%E9%9F%A9%E6%84%88/127407" },
+            { name: "白居易", url: "https://baike.baidu.com/item/%E7%99%BD%E5%B1%85%E6%98%93/174330" },
+            { name: "李绅", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%BB%85/6908" },
+            { name: "刘禹锡", url: "https://baike.baidu.com/item/%E5%88%98%E7%A6%B9%E9%94%A1/296467" },
+            { name: "柳宗元", url: "https://baike.baidu.com/item/%E6%9F%B3%E5%AE%97%E5%85%83/127462" },
+            { name: "元稹", url: "https://baike.baidu.com/item/%E5%85%83%E7%A8%B9/207525" },
+            { name: "贾岛", url: "https://baike.baidu.com/item/%E8%B4%BE%E5%B2%9B/1017726" },
+            { name: "施肩吾", url: "https://baike.baidu.com/item/%E6%96%BD%E8%82%A9%E5%90%BE/328448" },
+            { name: "卢仝(tóng)", url: "https://baike.baidu.com/item/%E5%8D%A2%E4%BB%9D/677946" },
+            { name: "刘皂", url: "https://baike.baidu.com/item/%E5%88%98%E7%9A%82/8389123" },
+            { name: "张枯", url: "https://baike.baidu.com/item/%E5%BC%A0%E7%A5%9C/1245471" },
+            { name: "李德裕", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%BE%B7%E8%A3%95/919662" },
+            { name: "李贺", url: "https://baike.baidu.com/item/%E6%9D%8E%E8%B4%BA/764" },
+            { name: "许浑", url: "https://baike.baidu.com/item/%E8%AE%B8%E6%B5%91/1379561" },
+            { name: "温庭筠", url: "https://baike.baidu.com/item/%E6%B8%A9%E5%BA%AD%E7%AD%A0/1125" },
+            { name: "杜牧", url: "https://baike.baidu.com/item/%E6%9D%9C%E7%89%A7/244529" },
+            { name: "李商隐", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%95%86%E9%9A%90/74852" },
+            { name: "罗隐", url: "https://baike.baidu.com/item/%E7%BD%97%E9%9A%90/17438" },
+            { name: "皮日休", url: "https://baike.baidu.com/item/%E7%9A%AE%E6%97%A5%E4%BC%91/271315" },
+            { name: "马戴", url: "https://baike.baidu.com/item/%E9%A9%AC%E6%88%B4/1162965" },
+            { name: "韩偓", url: "https://baike.baidu.com/item/%E9%9F%A9%E5%81%93/2448066" },
+            { name: "崔涂", url: "https://baike.baidu.com/item/%E5%B4%94%E6%B6%82/1163098" },
+            { name: "杜荀鹤", url: "https://baike.baidu.com/item/%E6%9D%9C%E8%8D%80%E9%B9%A4/702036" },
+            { name: "苏轼", url: "https://baike.baidu.com/item/%E8%8B%8F%E8%BD%BC/53906" },
+            { name: "李清照", url: "https://baike.baidu.com/item/%E6%9D%8E%E6%B8%85%E7%85%A7/6351" },
+            { name: "辛弃疾", url: "https://baike.baidu.com/item/%E8%BE%9B%E5%BC%83%E7%96%BE/134859" },
+            { name: "欧阳修", url: "https://baike.baidu.com/item/%E6%AC%A7%E9%98%B3%E4%BF%AE/127825" },
+            { name: "陆游", url: "https://baike.baidu.com/item/%E9%99%86%E6%B8%B8/125079" },
+            { name: "范仲淹", url: "https://baike.baidu.com/item/%E8%8C%83%E4%BB%B2%E6%B7%B9/176112" },
+            { name: "王安石", url: "https://baike.baidu.com/item/%E7%8E%8B%E5%AE%89%E7%9F%B3/127359" },
+            { name: "黄庭坚", url: "https://baike.baidu.com/item/%E9%BB%84%E5%BA%AD%E5%9D%9A?fromModule=lemma_search-box" },
+            { name: "杨万里", url: "https://baike.baidu.com/item/%E6%9D%A8%E4%B8%87%E9%87%8C/35772" },
+            { name: "范成大", url: "https://baike.baidu.com/item/%E8%8C%83%E6%88%90%E5%A4%A7?fromModule=lemma_search-box" },
+            { name: "司马光", url: "https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E5%85%89/220370" },
+            { name: "文天祥", url: "https://baike.baidu.com/item/%E6%96%87%E5%A4%A9%E7%A5%A5/183780" },
+            { name: "柳永", url: "https://baike.baidu.com/item/%E6%9F%B3%E6%B0%B8/121272" },
+            { name: "秦观", url: "https://baike.baidu.com/item/%E7%A7%A6%E8%A7%82/207881" },
+            { name: "晏殊", url: "https://baike.baidu.com/item/%E6%99%8F%E6%AE%8A/207628" },
+            { name: "岳飞", url: "https://baike.baidu.com/item/%E5%B2%B3%E9%A3%9E/127844" },
+            { name: "姜夔(kuí)", url: "https://baike.baidu.com/item/%E5%A7%9C%E5%A4%94?fromModule=lemma_search-box" },
+            { name: "晏几道", url: "https://baike.baidu.com/item/%E6%99%8F%E5%87%A0%E9%81%93/207489" },
+            { name: "朱熹", url: "https://baike.baidu.com/item/%E6%9C%B1%E7%86%B9/106669" },
+            { name: "周邦彦", url: "https://baike.baidu.com/item/%E5%91%A8%E9%82%A6%E5%BD%A6/160621" },
+            { name: "朱淑真", url: "https://baike.baidu.com/item/%E6%9C%B1%E6%B7%91%E7%9C%9F/469745" },
+            { name: "叶绍翁", url: "https://baike.baidu.com/item/%E5%8F%B6%E7%BB%8D%E7%BF%81?fromModule=lemma_search-box" },
+            { name: "苏辙", url: "https://baike.baidu.com/item/%E8%8B%8F%E8%BE%99/597591" },
+            { name: "蒋捷", url: "https://baike.baidu.com/item/%E8%92%8B%E6%8D%B7/29617" },
+            { name: "林逋", url: "https://baike.baidu.com/item/%E6%9E%97%E9%80%8B?fromModule=lemma_search-box" },
+            { name: "梅尧臣", url: "https://baike.baidu.com/item/%E6%A2%85%E5%B0%A7%E8%87%A3/682418?fromModule=disambiguation" },
+            { name: "曾巩", url: "https://baike.baidu.com/item/%E6%9B%BE%E5%B7%A9/210355" },
+            { name: "陈与义", url: "https://baike.baidu.com/item/%E9%99%88%E4%B8%8E%E4%B9%89?fromModule=lemma_search-box" },
+            { name: "张孝祥", url: "https://baike.baidu.com/item/%E5%BC%A0%E5%AD%9D%E7%A5%A5/3553202" },
+            { name: "张耒(lěi)", url: "https://baike.baidu.com/item/%E5%BC%A0%E8%80%92/203464" },
+            { name: "米芾(fú)", url: "https://baike.baidu.com/item/%E7%B1%B3%E8%8A%BE/1255000" },
+            { name: "苏涣", url: "https://baike.baidu.com/item/%E8%8B%8F%E6%B6%A3/10652" },
+            { name: "苏洵", url: "https://baike.baidu.com/item/%E8%8B%8F%E6%B4%B5/597274" },
+            { name: "周敦颐", url: "https://baike.baidu.com/item/%E5%91%A8%E6%95%A6%E9%A2%90/327717" },
+            { name: "艾青", url: "https://baike.baidu.com/item/%E8%89%BE%E9%9D%92/173395" },
+            { name: "北岛", url: "https://baike.baidu.com/item/%E5%8C%97%E5%B2%9B/372" },
+            { name: "冰心", url: "https://baike.baidu.com/item/%E5%86%B0%E5%BF%83/114339" },
+            { name: "陈敬容", url: "https://baike.baidu.com/item/%E9%99%88%E6%95%AC%E5%AE%B9?fromModule=lemma_search-box" },
+            { name: "陈梦家", url: "https://baike.baidu.com/item/%E9%99%88%E6%A2%A6%E5%AE%B6?fromModule=lemma_search-box" },
+            { name: "陈去病", url: "https://baike.baidu.com/item/%E9%99%88%E5%8E%BB%E7%97%85?fromModule=lemma_search-box" },
+            { name: "陈三立", url: "https://baike.baidu.com/item/%E9%99%88%E4%B8%89%E7%AB%8B?fromModule=lemma_search-box" },
+            { name: "陈毅", url: "https://baike.baidu.com/item/%E9%99%88%E6%AF%85?fromModule=lemma_search-box" },
+            { name: "戴望舒", url: "https://baike.baidu.com/item/%E6%88%B4%E6%9C%9B%E8%88%92?fromModule=lemma_search-box" },
+            { name: "董必武", url: "https://baike.baidu.com/item/%E8%91%A3%E5%BF%85%E6%AD%A6?fromModule=lemma_search-box" },
+            { name: "樊增祥", url: "https://baike.baidu.com/item/%E6%A8%8A%E5%A2%9E%E7%A5%A5?fromModule=lemma_search-box" },
+            { name: "冯至", url: "https://baike.baidu.com/item/%E5%86%AF%E8%87%B3/2436077" },
+            { name: "高旭", url: "https://baike.baidu.com/item/%E9%AB%98%E6%97%AD/9509336" },
+            { name: "戈壁舟", url: "https://baike.baidu.com/item/%E6%88%88%E5%A3%81%E8%88%9F?fromModule=lemma_search-box" },
+            { name: "郭沫若", url: "https://baike.baidu.com/item/%E9%83%AD%E6%B2%AB%E8%8B%A5?fromModule=lemma_search-box" },
+            { name: "何其芳", url: "https://baike.baidu.com/item/%E4%BD%95%E5%85%B6%E8%8A%B3?fromModule=lemma_search-box" },
+            { name: "弘一", url: "https://baike.baidu.com/item/%E5%BC%98%E4%B8%80?fromModule=lemma_search-box" },
+            { name: "胡适", url: "https://baike.baidu.com/item/%E8%83%A1%E9%80%82/119246" },
+            { name: "吉鸿昌", url: "https://baike.baidu.com/item/%E5%90%89%E9%B8%BF%E6%98%8C/28366" },
+            { name: "金庸", url: "https://baike.baidu.com/item/%E9%87%91%E5%BA%B8/128951" },
+            { name: "李大钊", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%A4%A7%E9%92%8A/115618" },
+            { name: "李季", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%AD%A3/24390?fromModule=lemma_sense-layer#viewPageContent" },
+            { name: "梁启超", url: "https://baike.baidu.com/item/%E6%A2%81%E5%90%AF%E8%B6%85/119077" },
+            { name: "鲁迅", url: "https://baike.baidu.com/item/%E9%B2%81%E8%BF%85/36231" },
+            { name: "马君武", url: "https://baike.baidu.com/item/%E9%A9%AC%E5%90%9B%E6%AD%A6/128927" },
+            { name: "毛泽东", url: "https://baike.baidu.com/item/%E6%AF%9B%E6%B3%BD%E4%B8%9C?fromModule=lemma_search-box" },
+            { name: "穆旦", url: "https://baike.baidu.com/item/%E7%A9%86%E6%97%A6?fromModule=lemma_search-box" },
+            { name: "琼瑶", url: "https://baike.baidu.com/item/%E7%90%BC%E7%91%B6/177" },
+            { name: "孙中山", url: "https://baike.baidu.com/item/%E5%AD%99%E4%B8%AD%E5%B1%B1/128084" },
+            { name: "汪国真", url: "https://baike.baidu.com/item/%E6%B1%AA%E5%9B%BD%E7%9C%9F?fromModule=lemma_search-box" },
+            { name: "王国维", url: "https://baike.baidu.com/item/%E7%8E%8B%E5%9B%BD%E7%BB%B4/119039" },
+            { name: "闻一多", url: "https://baike.baidu.com/item/%E9%97%BB%E4%B8%80%E5%A4%9A/148101" },
+            { name: "席慕容", url: "https://baike.baidu.com/item/%E5%B8%AD%E6%85%95%E8%93%89?fromtitle=%E5%B8%AD%E6%85%95%E5%AE%B9&fromid=11194557&fromModule=lemma_search-box" },
+            { name: "徐志摩", url: "https://baike.baidu.com/item/%E5%BE%90%E5%BF%97%E6%91%A9/286345" },
+            { name: "郁达夫", url: "https://baike.baidu.com/item/%E9%83%81%E8%BE%BE%E5%A4%AB/285937" },
+            { name: "臧克家", url: "https://baike.baidu.com/item/%E8%87%A7%E5%85%8B%E5%AE%B6/152684" },
+            { name: "周恩来", url: "https://baike.baidu.com/item/%E5%91%A8%E6%81%A9%E6%9D%A5/114814" },
+            { name: "秋瑾", url: "https://baike.baidu.com/item/%E7%A7%8B%E7%91%BE/30055" },
+        ];
+        
+        // 初始化搜索结果列表
+        function initSearchResults() {
+            const resultsContainer = document.getElementById('searchResults');
+            
+            poets.forEach(poet => {
+                const poetElement = document.createElement('div');
+                poetElement.className = 'poet-item';
+                poetElement.innerHTML = `<a href="${poet.url}" target="_blank">${poet.name}</a>`;
+                resultsContainer.appendChild(poetElement);
+            });
+        }
+        
+        // 搜索功能
+        function searchPoets() {
+            const searchTerm = document.getElementById('searchInput').value.toUpperCase();//获取用户搜索内容
+            const resultsContainer = document.getElementById('searchResults');//获取已有数组
+            const poetItems = resultsContainer.getElementsByClassName('poet-item');//获取已有数组下的字符串
+            
+            let hasResults = false;
+            
+            for (let i = 0; i < poetItems.length; i++) {
+                const poetName = poetItems[i].textContent || poetItems[i].innerText;//遍历数组，保存在变量中
+                
+                if (poetName.toUpperCase().includes(searchTerm)) {//如果搜索内容与已有数组内的元素相等
+                    poetItems[i].style.display = '';//展示
+                    hasResults = true;
+                } else {
+                    poetItems[i].style.display = 'none';//否则不展示
+                }
+            }
+            
+            // 显示或隐藏搜索结果容器
+            if (searchTerm.length > 0) {
+                resultsContainer.style.display = 'block';
+            } else {
+                resultsContainer.style.display = 'none';
+            }
+        }
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initSearchResults();
+            
+            // 搜索按钮点击事件
+            document.getElementById('searchBtn').addEventListener('click', function() {
+                searchPoets();
+            });
+            
+            // 输入框实时搜索
+            document.getElementById('searchInput').addEventListener('input', function() {
+                searchPoets();
+            });
+            
+            // 点击页面其他区域关闭搜索结果
+            document.addEventListener('click', function(e) {
+                const searchResults = document.getElementById('searchResults');
+                const searchContainer = document.querySelector('.search-container');
+                
+                if (!searchContainer.contains(e.target) && !searchResults.contains(e.target)) {
+                    searchResults.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- 
+ 3.联系我们
+ 4.其他网页 -->
