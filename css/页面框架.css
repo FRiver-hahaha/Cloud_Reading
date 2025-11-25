@@ -5,6 +5,8 @@
             --primary-text-color: black;
             --link-color: #18539e;
             --search-border-color: #f69f53;
+            --shadow-bg-color: #666;
+            --shadow-tab-color: #b8b49d;
         }
         
         * {
@@ -17,11 +19,10 @@
         
         html {
             background-color: var(--primary-bg-color);
-            font-size: 16px;
+            font-size: 8px;
         }
         
         body {
-            padding: 0.5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -29,8 +30,9 @@
         }
         
         .container {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
             width: 100%;
-            max-width: 23.77rem;
             margin: 0 auto;
         }
         
@@ -46,7 +48,7 @@
             margin-bottom: 0.5rem;
             width: 100%;
             height: 1.75rem;
-            box-shadow: 3px 3px 6px #666;
+            box-shadow: 3px 3px 6px var(--shadow-bg-color);
         }
         
         .decoration-img {
@@ -55,13 +57,13 @@
         }
         
         .main-title {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             text-align: center;
             color: var(--primary-text-color);
         }
         
         .sub-title {
-            font-size: 0.35rem;
+            font-size: 0.31rem;
             text-align: center;
             color: var(--primary-text-color);
         }
@@ -126,7 +128,7 @@
         
         .search-results .poet-item {
             padding: 0.2rem 0.5rem;
-            font-size: 0.5rem;
+            font-size: 0.35rem;
             border-bottom: 1px solid #eee;
         }
         
@@ -135,7 +137,7 @@
         }
         
         .quote {
-            font-size: 0.5rem;
+            font-size: 0.35rem;
             color: var(--primary-text-color);
             text-align: center;
             margin: 0 0.5rem;
@@ -147,19 +149,22 @@
         .tab-container {
             display: flex;
             justify-content: center;
-            width: 35%;
+            width: 100%;
             background-color: var(--container-bg-color);
-            border: solid 0.07rem var(--border-color);
-            border-radius: 0.3rem;
-            position: fixed;
-            right: 0.5rem;
-            bottom: 0.5rem;
+            top: 0.5rem;
+            margin-bottom: 0.5rem;
         }
         
         .tab-container a {
             margin: 0 0.5rem;
             color: var(--primary-text-color);
-            font-size: 0.5rem;
+            font-size: 0.35rem;
+            background-color: var(--container-bg-color);
+            transition: all 0.1s ease;
+        }
+
+        .tab-container a:hover{
+            background-color: var(--shadow-tab-color);
         }
         
         /* 朝代分类 */
@@ -178,7 +183,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 0.5rem;
+            font-size: 0.35rem;
             font-weight: bold;
         }
         
@@ -199,7 +204,8 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            font-size: 0.5rem;
+            font-size: 0.35rem;
+            box-shadow: 3px 3px 6px var(--shadow-bg-color);
         }
         /* 后记 */
         .epilogue {
@@ -210,39 +216,25 @@
             padding: 0.5rem;
             margin-bottom: 0.5rem;
             color: var(--primary-text-color);
-            
+            box-shadow: 3px 3px 6px var(--shadow-bg-color);
         }
         
         .epilogue h4 {
-            font-size: 0.6rem;
+            font-size: 0.5rem;
             text-align: center;
             margin-bottom: 0.3rem;
             color: var(--primary-text-color);
         }
         
         .epilogue p {
-            font-size: 0.5rem;
+            font-size: 0.35rem;
             margin-bottom: 0.3rem;
             line-height: 1.4;
             color: var(--primary-text-color);
             font-family: fangsong;
         }
         
-        /* 免责声明 */
-        .disclaimer {
-            
-            font-size: 0.4rem;
-            line-height: 1.4;
-            width: 100%;
-            padding: 0.5rem;
-        }
-        
-        .disclaimer p {
-            margin-bottom: 0.5rem;
-            color: var(--primary-text-color);
-        }
-        
-        /* 响应式调整 */
+        /* 响应式调整
         @media (max-width: 480px) {
             .search-section {
                 flex-direction: column;
@@ -266,4 +258,4 @@
                 width: 33%;
                 margin-bottom: 0.5rem;
             }
-        }
+        } */

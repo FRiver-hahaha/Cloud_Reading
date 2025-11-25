@@ -1,6 +1,7 @@
 *{
             text-decoration: none;
             color: #18539e;
+            transition: all 0.1s ease;
 }
 
 .《论语》十二章:hover{font-weight: normal;}
